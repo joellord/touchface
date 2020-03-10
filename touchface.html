@@ -1,0 +1,21 @@
+<html>
+  <head>
+		<title>Stop Touching Your Face!</title>
+	</head>
+
+	<body>
+		<button id="start">Start</button>
+		<canvas id="canvas" style="position: absolute" width=640 height=480></canvas>
+		<video id="webcam" autoplay loop muted width=640 height=480></video>
+
+	</body>
+
+	<script type="text/javascript" src="./js/tracking-min.js"></script>
+	<script type="text/javascript" src="./js/face-min.js"></script>
+	<script type="text/javascript" src="./js/handtrack.min.js"> </script>
+	<script type="text/javascript" src="./js/donttouch.js"> </script>
+
+	<script>
+	document.querySelector("#start").addEventListener("click", dontTouch);
+	</script>
+</html>
