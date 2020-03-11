@@ -159,6 +159,11 @@ const dontTouch = () => {
 
     const saySomething = () => {
         if (canTalk) {
+            let bg = document.querySelector("#stopit");
+            bg.classList.toggle("flashBg");
+            setTimeout(() => {
+                bg.classList.toggle("flashBg");
+            }, 2000);
             let phrases = ["Stop it", "Don't touch your face", "Hands Off!", "Take your hand off that face", "Touching your face will make you sick"];
             let el = Math.round(Math.random() * phrases.length);
             let phrase = phrases[el];
